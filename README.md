@@ -1,6 +1,6 @@
 # Trajectory-Estimation
 
-Description: In this project, you are provided with measured IMU data,
+**Description**: In this project, you are provided with measured IMU data,
 GPS data and ground truth trajectory data. Please apply appropriate
 algorithms to estimate trajectory based on IMU data alone, GPS data alone,
 IMU and GPS data together and then evaluate your algorithms by
@@ -9,19 +9,19 @@ trajectories) and quantitatively(e.g. RMSE, etc).
 This dataset is just a simple simulation of a ship sailing on the sea, whose
 trajectory is basically just a straight line, so you won’t see dramatic
 change in the data and fancy turns in the trajectory.
-The provided measured IMU data includes:
+The provided measured **IMU data** includes:
  data from 3D gyro ( unit: radius per second)
  data from 3D accelerometer( unit: meter per squared second)
 o acceleration in z direction includes gravity
 
 all are measured in the robot’s local coordinate system
-The provided measured GPS data includes:
+The provided measured **GPS data** includes:
  position information ( longitude, altitude and height)
  velocity information ( velocity in x and y and z direction)
  all are measured in Earth coordinate system
 The provided ground truth data includes:
 
-3D location data: longitude, latitude and height.
+**3D location data**: longitude, latitude and height.
 Multi-sensor data fusion algorithms include but not limited to:
  Kalman Filter(KF);
  Extended Kalman Filter(EKF);
@@ -34,7 +34,7 @@ Multi-sensor data fusion algorithms include but not limited to:
 The work you may need to do includes but not limited to:
 
 use initial orientation and initial position information to build
-transformation matrix.
+**transformation matrix**.
 
 o initial orientation: roll, pitch, yaw are all 0;
 o initial position: [0.1609; 4.2062; 0]
@@ -55,31 +55,3 @@ system) with filters, get estimated trajectory.
 
 compare and analysis your experimental results qualitatively(e.g.
 plot trajectories) and quantitatively(e.g. RMSE, etc).
-Requirements:
-At most 4 persons in one group.
-Please try multiple algorithms and compare the experimental results.
-submit the following material in one zip file ( file name format :
-name1*ID1_name2*ID2_name3*ID3_name4*ID4) before the day of
-our last class:
-o a report descripts how you design the model, how your model
-works and how your model performs, in detail.
-o source code ( with necessary comments)
-o associated data, figures or tables, documents.
-
-all reports, comments, documents, figures and tables should be in
-English.
-
-also submit paper version reports with a cover(print it double-sided
-please).
-
-Presentation:
-o the day of our last class
-o no longer than 15 minutes for each group
-o better in English
-Grading Policy:
-report 35%
-code 35%
-presentation 30%
-To provide evidence for evaluating your regular daily performance, please
-do “Exercise 2” as your homework and submit together with the final
-project (both e-version and paper-version).
