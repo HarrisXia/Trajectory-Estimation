@@ -1,0 +1,20 @@
+<launch>
+    <!-- Node Settings -->
+    <arg name="output" default="screen"/>
+    <!-- Verbose logging -->
+    <arg name="verbose" default="false"/>
+    <!-- Frame ID for messages -->
+    <arg name="frame_id" default="ukf"/>
+
+<group ns = "ukf_ns">
+    <node pkg="ukf_test" name="ukf_node" type="ukf_test_node" output="$(arg output)">
+        <param name="imu_topic" type="string" value="/IMU" />
+        <param name="frame_id" type="string" value="$(arg frame_id)"/>
+        <param name="imu_rate" type="int" value="1000" />
+        <param name="update_part/vio_topic" type="string" value="/fla/vio/odom"/>
+        <param name="update_part/gps_topic" type="string" value="/GPS"/>
+        <param name="update_part/delta_yaw"  value="0.0"/>
+        <param name="update_part/verbose"  value="$(arg verbose)"/>
+    </node>
+</group>
+</launch>

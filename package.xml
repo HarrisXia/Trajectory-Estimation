@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>csv2bag</name>
+  <version>0.0.5</version>
+  <description>ekf_imu</description>
+
+  <maintainer email="i_muxiaobai@163.com">imxb</maintainer>
+
+  <author>imxb</author>
+  <license>Apache 2</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+
+  <depend>diagnostic_updater</depend>
+  <depend>geometry_msgs</depend>
+  <depend>roscpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>eigen_conversions</depend>
+
+  <export>
+  </export>
+</package>
